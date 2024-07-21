@@ -1,3 +1,0 @@
-[submodule "CMMLU"]
-	path = CMMLU
-	url = https://github.com/haonan-li/CMMLU.git
