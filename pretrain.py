@@ -31,19 +31,19 @@ class Trainer:
         # lm_head ratio: 0.07983494067795566
         # total:415532544 (~415M)
         #
-        # self.config = custom_model.CustomModelConfig(
-        #     vocab_size=self.tokenizer.vocab_size(),
-        #     padding_token_id=self.tokenizer.token_pad_id,
-        #     max_position_embeddings=4096,
-        #     hidden_size=512,
-        #     num_heads=16,
-        #     MLP_intermediate=5000,
-        #     num_layers=40,
-        #     attention_dropout=0.1,
-        #     dtype=torch.bfloat16,
-        #     training=True,
-        #     linear_imp = torch.nn.Linear
-        # )
+        self.config = custom_model.CustomModelConfig(
+            vocab_size=self.tokenizer.vocab_size(),
+            padding_token_id=self.tokenizer.token_pad_id,
+            max_position_embeddings=4096,
+            hidden_size=512,
+            num_heads=16,
+            MLP_intermediate=5000,
+            num_layers=40,
+            attention_dropout=0.1,
+            dtype=torch.bfloat16,
+            training=True,
+            linear_imp = torch.nn.Linear
+        )
 
         # Wider config
         # ------------
@@ -74,19 +74,19 @@ class Trainer:
         #   * MLP ratio: 0.6682673260237617
         # lm_head ratio: 0.1030929639406133
         # total:442457664 (~442M)
-        self.config = custom_model.CustomModelConfig(
-            vocab_size=self.tokenizer.vocab_size(),
-            padding_token_id=self.tokenizer.token_pad_id,
-            max_position_embeddings=4096,
-            hidden_size=704,
-            num_heads=16,
-            MLP_intermediate=5000,
-            num_layers=28,
-            attention_dropout=0.1,
-            dtype=torch.bfloat16,
-            training=True,
-            linear_imp = torch.nn.Linear
-        )
+        # self.config = custom_model.CustomModelConfig(
+        #     vocab_size=self.tokenizer.vocab_size(),
+        #     padding_token_id=self.tokenizer.token_pad_id,
+        #     max_position_embeddings=4096,
+        #     hidden_size=704,
+        #     num_heads=16,
+        #     MLP_intermediate=5000,
+        #     num_layers=28,
+        #     attention_dropout=0.1,
+        #     dtype=torch.bfloat16,
+        #     training=True,
+        #     linear_imp = torch.nn.Linear
+        # )
 
 
 
