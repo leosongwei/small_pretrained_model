@@ -93,13 +93,13 @@ class Trainer:
         self.model = custom_model.CustomLLamaModel(self.config).to(device='cuda')
         # self.model = custom_model.EncoderDecoderModel(self.config).to(device='cuda')
 
-        self.lr = 1e-4
+        self.lr = 2e-3
         self.betas = (0.9, 0.95)
         self.weight_decay = 0.01
-        self.batch_size = 16
-        self.train_seq_length = 192
-        self.grad_accumulation_steps = 20
-        self.clip_grad_max_norm = 1.0
+        self.batch_size = 8
+        self.train_seq_length = 400
+        self.grad_accumulation_steps = 40
+        self.clip_grad_max_norm = 2.0
 
         # log
         self.display_log_per_steps = 20

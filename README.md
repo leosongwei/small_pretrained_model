@@ -92,6 +92,19 @@ test input: 基因组信息在生命科学研究中具有重要价值
 test out: ['基因组信息在生命科学研究中具有重要价值\n\u3000\u3000新华网北京11月1日电(记者 魏?) 我国科学实验科学研究所2日宣布，我国将建立一个“科学实验”研究小组，并将在2012年10月1日，在“科学实验”中，将“科学”与“科学”结合，形成“科学”和“科学”的“科学”和“科学”等。\n\u3000\u3000“科学”是“科学”的“实验”\n\u3000']
 ```
 
+## 解码
+
+TODO:
+* 贪心搜索
+* Beam Search
+
+## CMMLU测试
+
+得分很糟糕，但是整合的过程还算有趣。
+
+TODO
+
+
 ## 引用
 
 1. MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases https://arxiv.org/abs/2402.14905
