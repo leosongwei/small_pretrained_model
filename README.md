@@ -78,7 +78,7 @@ self.config = custom_model.CustomModelConfig(
 
 * 卡：RTX4090游戏卡，一片，目前的配置大概消耗显存18GB。
   * 以前也用过4080，给我的感觉是4090的速度大概是4080的3倍，功耗却只多几十瓦（大概350多瓦）
-* 数据集：THUCNNEWS，清华大学出的一个早年的新浪网新闻的数据集，从种类上不是很平衡，但贵在语料质量高，不容易训崩。
+* 数据集：THUCNEWS[5]，清华大学出的一个早年的新浪网新闻的数据集，从种类上不是很平衡，但贵在语料质量高，不容易训崩。
   * 一开始也实验了悟道[2]和万卷[3]数据集，其中包含的垃圾信息特别多，很难清洗出来，容易训炸，对于我这样token consumption不容易做大的项目来说不太友好
   * 当然没有附上数据集，若是想要运行，需要你自己去下载打乱并且pickle。参考`thucnnews_dataset.py`
 * 优化器：bitsandbytes.optim.AdamW8bit[4]
@@ -130,3 +130,4 @@ test out: ['基因组信息在生命科学研究中具有重要价值\n\u3000\u3
 2. WuDaoCorpora Text文本预训练数据集 https://data.baai.ac.cn/details/WuDaoCorporaText
 3. 书生·万卷多模态语料库 https://opendatalab.com/OpenDataLab/WanJuan1_dot_0
 4. bitsandbytes https://huggingface.co/docs/bitsandbytes/main/en/optimizers
+5. 中文文本分类数据集THUCNews http://thuctc.thunlp.org/#中文文本分类数据集THUCNews
