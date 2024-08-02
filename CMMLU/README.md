@@ -1,0 +1,1 @@
+https://github.com/haonan-li/CMMLU/tree/master 2912303a0f8c75432acfeb10aa38e6108ca5fdbc

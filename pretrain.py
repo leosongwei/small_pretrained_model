@@ -88,8 +88,6 @@ class Trainer:
         #     linear_imp = torch.nn.Linear
         # )
 
-
-
         self.model = custom_model.CustomLLamaModel(self.config).to(device='cuda')
         # self.model = custom_model.EncoderDecoderModel(self.config).to(device='cuda')
 
