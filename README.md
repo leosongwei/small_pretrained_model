@@ -6,7 +6,7 @@
 
 ## 授权
 
-由于本项目使用了Meta Llama和huggingface/transformers的代码，所以需服从它们的授权协议。
+由于本项目使用了Meta Llama和huggingface/transformers的代码，所以相关部分需服从它们的授权协议。
 
 ## 架构
 
