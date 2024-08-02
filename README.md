@@ -77,7 +77,8 @@ self.config = custom_model.CustomModelConfig(
 ## 训练配置
 
 * 数据集：THUCNNEWS，清华大学出的一个早年的新浪网新闻的数据集，从种类上不是很平衡，但贵在语料质量高，不容易训崩。
-  * 一开始也实验了悟道和万卷数据集，其中包含的垃圾信息特别多，很难清洗出来，容易训炸，对于我这样token consumption不容易做大的项目来说不太友好。
+  * 一开始也实验了悟道和万卷数据集，其中包含的垃圾信息特别多，很难清洗出来，容易训炸，对于我这样token consumption不容易做大的项目来说不太友好
+  * 当然没有附上数据集，若是想要运行，需要你自己去下载打乱并且pickle。参考`thucnnews_dataset.py`
 * 优化器：bitsandbytes.optim.AdamW8bit
   * 感觉bitsandbytes这个AdamW里面加了一些魔法，更稳定的同时效果还更好
   * betas：(0.9, 0.95)
