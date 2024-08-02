@@ -118,6 +118,8 @@ test out: ['基因组信息在生命科学研究中具有重要价值\n\u3000\u3
 
 得分很糟糕，基本就是乱猜，毕竟训练数据有限，而且也没有经过任何SFT，但是整合的过程还算有趣。CMMLU的代码比较糟糕，没什么文档，要接入自己的模型还得去debug看他们到底给模型输入了什么，需要输出什么。
 
+如果要玩的话，参考`CMMLU.ipynb`和`CMMLU/README.md`。
+
 ## 引用
 
 1. MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases https://arxiv.org/abs/2402.14905
