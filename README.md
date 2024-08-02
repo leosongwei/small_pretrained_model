@@ -76,6 +76,7 @@ self.config = custom_model.CustomModelConfig(
 
 ## 训练配置
 
+* 卡：RTX4090游戏卡，一片，目前的配置大概消耗显存18GB
 * 数据集：THUCNNEWS，清华大学出的一个早年的新浪网新闻的数据集，从种类上不是很平衡，但贵在语料质量高，不容易训崩。
   * 一开始也实验了悟道[2]和万卷[3]数据集，其中包含的垃圾信息特别多，很难清洗出来，容易训炸，对于我这样token consumption不容易做大的项目来说不太友好
   * 当然没有附上数据集，若是想要运行，需要你自己去下载打乱并且pickle。参考`thucnnews_dataset.py`
